@@ -1,24 +1,24 @@
-Verification failed from /home/theneonlightning/3sem/stack/main.cpp (312) int main()
-Stack_t "NULL"[0x7ffd03aeebe0] {
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (9) int main()
+Stack_t "stack"[0x7ffe9c9df2c0] {
   ErrorCode = 0 (No error)
-  size = 4
-  buffer[16] = [0x55bf02d6fee0]
+  size = 11
+  buffer[16] = [0x560f3ae5c110]
   {
-   *[1] = 0
-   *[2] = 1
-   *[3] = 2
-   *[4] = 3
-    [5] = -121 (POISON?)
-    [6] = -121 (POISON?)
-    [7] = -121 (POISON?)
-    [8] = -121 (POISON?)
-    [9] = -121 (POISON?)
-    [10] = -121 (POISON?)
-    [11] = -121 (POISON?)
-    [12] = -121 (POISON?)
-    [13] = -121 (POISON?)
-    [14] = -121 (POISON?)
-    [15] = -121 (POISON?)
-    [16] = -121 (POISON?)
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 91 (POISON?)
+    [13] = 91 (POISON?)
+    [14] = 91 (POISON?)
+    [15] = 91 (POISON?)
+    [16] = 91 (POISON?)
   }
 }

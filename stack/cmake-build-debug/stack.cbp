@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/theneonlightning/3sem/stack/Stack_t.hpp">
+			<Option target="stack"/>
+		</Unit>
 		<Unit filename="/home/theneonlightning/3sem/stack/main.cpp">
 			<Option target="stack"/>
 		</Unit>

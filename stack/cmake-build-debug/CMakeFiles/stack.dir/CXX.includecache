@@ -6,11 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/theneonlightning/3sem/stack/main.cpp
-stdio.h
--
-string
+/home/theneonlightning/3sem/stack/Stack_t.hpp
+cstdio
 -
 cassert
 -
+cstdlib
+-
+ctime
+-
+string
+-
+
+/home/theneonlightning/3sem/stack/main.cpp
+Stack_t.hpp
+/home/theneonlightning/3sem/stack/Stack_t.hpp
 
