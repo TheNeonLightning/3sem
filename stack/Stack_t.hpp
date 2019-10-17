@@ -1,12 +1,20 @@
+/**
+ * \file
+ * \brief This file contains template class Stack_t.
+ * \author Eremenko Ilya
+ *
+ * The class Stack_t contained in this file is an realization of data structure
+ * stack with some additional defensive mechanisms.
+ */
 #pragma once
 
-#include <cstdio>
 #include <cassert>
+#include <cstdio>
 #include <cstdlib>
 #include <ctime>
 #include <string>
 
-#define VAR_NAME(name)  #name
+#define VAR_NAME(name)  #name ///Is used to get the Stack_t variable name.
 
 #define VERIFIED (Dump(Verification(), __FILE__, __LINE__, __PRETTY_FUNCTION__) || (assert(false), false));
 
@@ -14,7 +22,14 @@
 
 #define FORCE_FAIL(error_code) (Dump(error_code, __FILE__, __LINE__, __PRETTY_FUNCTION__) || (assert(false), false));
 
-
+/**
+ * /brief The class Stack_t realization with defensive mechanisms and dumper.
+ *
+ * In case of using this class with custom
+ * @tparam external_dumper The pointer to the custom dumper.
+ * @tparam value Is used in hash calculation via Horner's method.
+ * @tparam power Is used in hash calculation via Horner's method.
+ */
 template <typename Elem_t, bool (*external_dumper)
     (int, const char*, const int, const char*, FILE*) = nullptr, int value = 741, int power = 7>
 class Stack_t {
