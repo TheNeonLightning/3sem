@@ -10,6 +10,7 @@ int main() {
   for (int i = 0; i < 5; ++i) {
     stack.Pop();
   }
+  stack.Dump(static_cast<char>(Stack_t<char>::ErrorCode::no_error_run_of_dump), __FILE__, __LINE__, __PRETTY_FUNCTION__);
   fclose(file);
   return 0;
 }

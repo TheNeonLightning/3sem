@@ -7,9 +7,9 @@
 #IncludeRegexTransform: 
 
 /home/theneonlightning/3sem/stack/Stack_t.hpp
-cstdio
--
 cassert
+-
+cstdio
 -
 cstdlib
 -

@@ -58,29 +58,71 @@ public:
 
   };
 
+  Stack_t(const Stack_t& stack)            = delete;
 
+  Stack_t& operator=(const Stack_t& stack) = delete;
+
+  /**
+   * @param log Can be specified and later used for output.
+   * @param name The name of a variable that will be used in (default) dump.
+   */
   explicit Stack_t(FILE* log = nullptr, const char* name = nullptr);
-
+  /**
+   * @param poison Can be used to set a specific poison value. (Otherwise it
+   * will be generated.)
+   * @param log Can be specified and later used for output.
+   * @param name The name of a variable that will be used in (default) dump.
+   */
   explicit Stack_t(Elem_t poison, FILE* log = nullptr, const char* name = nullptr);
 
   void Push(const Elem_t& element);
-
+  /**
+   * \brief Returns the top element in the stack and removes it from it. In case
+   * if the stack was empty the behavior depends on the code parameter.
+   *
+   *    If code is nullptr (default), the error will occur and the dumper will be
+   * called before finishing the process.
+   *    If code is not nullptr, the dumper
+   * will be called, but it won't be followed by finishing process. The error
+   * code will be placed in code and the stack won't change. The returned value
+   * will be poison value.
+   */
   Elem_t Pop(ErrorCode* code = nullptr);
-
+  /**
+   * \brief Calculating and saving the hash from stack via Horner's method
+   * with the usage
+   * of value and power template parameters.
+   *
+   * The division is implemented as a bitwise shift by a power number (as if
+   * it was divided by the power of two.
+   */
   void Hash();
 
   bool HashCheck();
-
+  /**
+   * \brief Checking that the unused part of buffer is filled with poison value.
+   */
   bool BufferCheck();
-
+  /**
+   * \brief Checking that the buffer's sentinels (in the beginning and in the
+   * ending) are equal to poison value.
+   */
   bool SentinelCheck();
-
+  /**
+   * @param code Error code.
+   * @param file The name of the file n which the error occured
+   * @param line The number of a line in which the error occured.
+   * @param function The name of the function in which the error occured.
+   */
   bool DefaultDump(int code, const char* file, int line, const char* function);
 
   bool Dump(int code, const char* file, int line, const char* function);
-
+  /**
+   * \brief A set of checks of the stack and its content.
+   */
   ErrorCode Verification();
 
+  /// The following functions are used to output the base types in DefaultDumper.
   void ElementsOutput(unsigned long long sample);
 
   void ElementsOutput(long long sample);
@@ -94,6 +136,7 @@ public:
   void ElementsOutput(std::string sample);
 
   void ElementsOutput(int sample);
+
 
   ~Stack_t();
 
@@ -115,9 +158,13 @@ protected:
   int hash = 0;
   int ending_point = 0;
 
-
+  /**
+   * \brief Generating poison value.
+   */
   Elem_t PoisonValue();
-
+  /**
+   * \brief Increasing the capacity of the buffer by multiplying it by two.
+   */
   void ChangeCapacity();
 };
 
@@ -127,11 +174,14 @@ template <typename Elem_t, bool (*external_dumper)
     (int, const char*, const int, const char*, FILE*), int value, int power>
 
 Stack_t<Elem_t, external_dumper, value, power>::Stack_t(FILE* log, const char* name): name(name) {
+  assert(ferror(log) == 0);
+  assert(feof(log) == 0);
+
   poison_value = PoisonValue();
   buffer = new Elem_t[3];
 
   if (log == nullptr) {
-    log_file = fopen("../log_file", "w");
+    log_file = fopen("../log_file", "a");
     open_log = true;
   } else {
     log_file = log;
@@ -153,7 +203,10 @@ Stack_t<Elem_t, external_dumper, value, power>::Stack_t(FILE* log, const char* n
 template <typename Elem_t, bool (*external_dumper)
     (int, const char*, const int, const char*, FILE*), int value, int power>
 
-Stack_t<Elem_t, external_dumper, value, power>::Stack_t(Elem_t poison, FILE* log, const char* name): Stack_t(log) {
+Stack_t<Elem_t, external_dumper, value, power>::Stack_t(Elem_t poison, FILE* log, const char* name): Stack_t(log, name) {
+  assert(ferror(log) == 0);
+  assert(feof(log) == 0);
+
   poison_value = poison;
 }
 ////////////////////////////////////////////////////////////////////////////////
@@ -214,6 +267,8 @@ template <typename Elem_t, bool (*external_dumper)
     (int, const char*, const int, const char*, FILE*), int value, int power>
 
 void Stack_t<Elem_t, external_dumper, value, power>::Hash() {
+  assert(buffer != nullptr);
+
   const char* buffer_str = reinterpret_cast<char*>(buffer);
   const char* stack_str  = reinterpret_cast<char*>(this);
   hash = 0;
@@ -413,6 +468,9 @@ DefaultDump(int code, const char* file, const int line, const char* function) {
   bool flag = false;
   fprintf(log_file, "Verification failed from %s (%d) %s\n", file, line, function);
   fflush(log_file);
+  if (name == nullptr) {
+    name = "name not stated";
+  }
   fprintf(log_file, "Stack_t \"%s\"[%p] {\n", name, this);
   fflush(log_file);
   const char* error_name = nullptr;
