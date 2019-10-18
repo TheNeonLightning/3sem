@@ -3,4 +3,47 @@
 
 CMakeFiles/stack.dir/main.cpp.o: ../Stack_t.hpp
 CMakeFiles/stack.dir/main.cpp.o: ../main.cpp
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-message.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-printers.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/gtest_prod.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/stack.dir/main.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+
+CMakeFiles/stack.dir/test.cpp.o: ../Stack_t.hpp
+CMakeFiles/stack.dir/test.cpp.o: ../test.cpp
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-matchers.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-message.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-printers.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/gtest_prod.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/stack.dir/test.cpp.o: googletest-src/googletest/include/gtest/internal/gtest-type-util.h
 

@@ -96,6 +96,13 @@ public:
    * The division is implemented as a bitwise shift by a power number (as if
    * it was divided by the power of two.
    */
+
+  bool Dump(int code, const char* file, int line, const char* function);
+
+  ~Stack_t();
+
+protected:
+
   void Hash();
 
   bool HashCheck();
@@ -115,8 +122,6 @@ public:
    * @param function The name of the function in which the error occured.
    */
   bool DefaultDump(int code, const char* file, int line, const char* function);
-
-  bool Dump(int code, const char* file, int line, const char* function);
   /**
    * \brief A set of checks of the stack and its content.
    */
@@ -136,12 +141,6 @@ public:
   void ElementsOutput(std::string sample);
 
   void ElementsOutput(int sample);
-
-
-  ~Stack_t();
-
-
-protected:
 
   int beginning_point = 0;
   int size = 0;
@@ -174,8 +173,6 @@ template <typename Elem_t, bool (*external_dumper)
     (int, const char*, const int, const char*, FILE*), int value, int power>
 
 Stack_t<Elem_t, external_dumper, value, power>::Stack_t(FILE* log, const char* name): name(name) {
-  assert(ferror(log) == 0);
-  assert(feof(log) == 0);
 
   poison_value = PoisonValue();
   buffer = new Elem_t[3];
@@ -335,6 +332,8 @@ bool Stack_t<Elem_t, external_dumper, value, power>::
 Dump(int code, const char* file, const int line, const char* function) {
 
   assert(log_file != nullptr);
+  assert(ferror(log_file) == 0);
+  assert(feof(log_file) == 0);
   assert(file != nullptr);
   assert(line > 0);
   assert(function != nullptr);
@@ -461,6 +460,8 @@ bool Stack_t<Elem_t, external_dumper, value, power>::
 DefaultDump(int code, const char* file, const int line, const char* function) {
 
   assert(log_file != nullptr);
+  assert(ferror(log_file) == 0);
+  assert(feof(log_file) == 0);
   assert(file != nullptr);
   assert(line > 0);
   assert(function != nullptr);

@@ -1,8 +1,17 @@
-Verification failed from /home/theneonlightning/3sem/stack/main.cpp (9) int main()
-Stack_t "stack"[0x7ffd53ecf600] {
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (244) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffc0f42ee40] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x55a1b0162330]
+  {
+    [1] = 80 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffca256da20] {
   ErrorCode = 0 (No error)
   size = 11
-  buffer[16] = [0x565491bcd110]
+  buffer[16] = [0x560caffab9c0]
   {
    *[1] = -2
    *[2] = -2
@@ -15,18 +24,18 @@ Stack_t "stack"[0x7ffd53ecf600] {
    *[9] = -2
    *[10] = -2
    *[11] = -2
-    [12] = 102 (POISON?)
-    [13] = 102 (POISON?)
-    [14] = 102 (POISON?)
-    [15] = 102 (POISON?)
-    [16] = 102 (POISON?)
+    [12] = 13 (POISON?)
+    [13] = 13 (POISON?)
+    [14] = 13 (POISON?)
+    [15] = 13 (POISON?)
+    [16] = 13 (POISON?)
   }
 }
-Verification failed from /home/theneonlightning/3sem/stack/main.cpp (13) int main()
-Stack_t "stack"[0x7ffd53ecf600] {
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffca256da20] {
   ErrorCode = 0 (No error)
   size = 6
-  buffer[16] = [0x565491bcd110]
+  buffer[16] = [0x560caffab9c0]
   {
    *[1] = -2
    *[2] = -2
@@ -34,15 +43,471 @@ Stack_t "stack"[0x7ffd53ecf600] {
    *[4] = -2
    *[5] = -2
    *[6] = -2
-    [7] = 102 (POISON?)
-    [8] = 102 (POISON?)
-    [9] = 102 (POISON?)
-    [10] = 102 (POISON?)
-    [11] = 102 (POISON?)
-    [12] = 102 (POISON?)
-    [13] = 102 (POISON?)
-    [14] = 102 (POISON?)
-    [15] = 102 (POISON?)
-    [16] = 102 (POISON?)
+    [7] = 13 (POISON?)
+    [8] = 13 (POISON?)
+    [9] = 13 (POISON?)
+    [10] = 13 (POISON?)
+    [11] = 13 (POISON?)
+    [12] = 13 (POISON?)
+    [13] = 13 (POISON?)
+    [14] = 13 (POISON?)
+    [15] = 13 (POISON?)
+    [16] = 13 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffdd6d176d0] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x55c948c509c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = -33 (POISON?)
+    [13] = -33 (POISON?)
+    [14] = -33 (POISON?)
+    [15] = -33 (POISON?)
+    [16] = -33 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffdd6d176d0] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x55c948c509c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = -33 (POISON?)
+    [8] = -33 (POISON?)
+    [9] = -33 (POISON?)
+    [10] = -33 (POISON?)
+    [11] = -33 (POISON?)
+    [12] = -33 (POISON?)
+    [13] = -33 (POISON?)
+    [14] = -33 (POISON?)
+    [15] = -33 (POISON?)
+    [16] = -33 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffc8b9d9c20] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x557e0d82d9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 14 (POISON?)
+    [13] = 14 (POISON?)
+    [14] = 14 (POISON?)
+    [15] = 14 (POISON?)
+    [16] = 14 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffc8b9d9c20] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x557e0d82d9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = 14 (POISON?)
+    [8] = 14 (POISON?)
+    [9] = 14 (POISON?)
+    [10] = 14 (POISON?)
+    [11] = 14 (POISON?)
+    [12] = 14 (POISON?)
+    [13] = 14 (POISON?)
+    [14] = 14 (POISON?)
+    [15] = 14 (POISON?)
+    [16] = 14 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (244) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffc8b9d9770] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x557e0d82e330]
+  {
+    [1] = 14 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffd5ffa9aa0] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x55b06d2819c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 28 (POISON?)
+    [13] = 28 (POISON?)
+    [14] = 28 (POISON?)
+    [15] = 28 (POISON?)
+    [16] = 28 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffd5ffa9aa0] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x55b06d2819c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = 28 (POISON?)
+    [8] = 28 (POISON?)
+    [9] = 28 (POISON?)
+    [10] = 28 (POISON?)
+    [11] = 28 (POISON?)
+    [12] = 28 (POISON?)
+    [13] = 28 (POISON?)
+    [14] = 28 (POISON?)
+    [15] = 28 (POISON?)
+    [16] = 28 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (244) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffd5ffa95f0] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x55b06d282330]
+  {
+    [1] = 28 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7fff581c4420] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x5565df27c9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 45 (POISON?)
+    [13] = 45 (POISON?)
+    [14] = 45 (POISON?)
+    [15] = 45 (POISON?)
+    [16] = 45 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7fff581c4420] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x5565df27c9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = 45 (POISON?)
+    [8] = 45 (POISON?)
+    [9] = 45 (POISON?)
+    [10] = 45 (POISON?)
+    [11] = 45 (POISON?)
+    [12] = 45 (POISON?)
+    [13] = 45 (POISON?)
+    [14] = 45 (POISON?)
+    [15] = 45 (POISON?)
+    [16] = 45 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (244) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7fff581c3f70] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x5565df27d330]
+  {
+    [1] = 45 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffd0f3259d0] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x55a5097ca9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 64 (POISON?)
+    [13] = 64 (POISON?)
+    [14] = 64 (POISON?)
+    [15] = 64 (POISON?)
+    [16] = 64 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffd0f3259d0] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x55a5097ca9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = 64 (POISON?)
+    [8] = 64 (POISON?)
+    [9] = 64 (POISON?)
+    [10] = 64 (POISON?)
+    [11] = 64 (POISON?)
+    [12] = 64 (POISON?)
+    [13] = 64 (POISON?)
+    [14] = 64 (POISON?)
+    [15] = 64 (POISON?)
+    [16] = 64 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (243) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffd0f325520] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x55a5097cb330]
+  {
+    [1] = 64 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (12) int main(int, char**)
+Stack_t "stack"[0x7ffe6137fbf0] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x5593a424e9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = -123 (POISON?)
+    [13] = -123 (POISON?)
+    [14] = -123 (POISON?)
+    [15] = -123 (POISON?)
+    [16] = -123 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/main.cpp (16) int main(int, char**)
+Stack_t "stack"[0x7ffe6137fbf0] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x5593a424e9c0]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = -123 (POISON?)
+    [8] = -123 (POISON?)
+    [9] = -123 (POISON?)
+    [10] = -123 (POISON?)
+    [11] = -123 (POISON?)
+    [12] = -123 (POISON?)
+    [13] = -123 (POISON?)
+    [14] = -123 (POISON?)
+    [15] = -123 (POISON?)
+    [16] = -123 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (243) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffe6137f740] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x5593a424f330]
+  {
+    [1] = -123 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (243) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7ffe92c00980] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x5638ef51e390]
+  {
+    [1] = -7 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (243) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7fff26bff860] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x55d5e2d78670]
+  {
+    [1] = -86 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/test.cpp (24) virtual void Run_Stack_t_Test::TestBody()
+Stack_t "stack"[0x7fff26bff860] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x55d5e2d77f30]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = -86 (POISON?)
+    [13] = -86 (POISON?)
+    [14] = -86 (POISON?)
+    [15] = -86 (POISON?)
+    [16] = -86 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/test.cpp (31) virtual void Run_Stack_t_Test::TestBody()
+Stack_t "stack"[0x7fff26bff860] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x55d5e2d77f30]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = -86 (POISON?)
+    [8] = -86 (POISON?)
+    [9] = -86 (POISON?)
+    [10] = -86 (POISON?)
+    [11] = -86 (POISON?)
+    [12] = -86 (POISON?)
+    [13] = -86 (POISON?)
+    [14] = -86 (POISON?)
+    [15] = -86 (POISON?)
+    [16] = -86 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/Stack_t.hpp (243) Elem_t Stack_t<Elem_t, external_dumper, value, power>::Pop(Stack_t<Elem_t, external_dumper, value, power>::ErrorCode*) [with Elem_t = int; bool (* external_dumper)(int, const char*, int, const char*, FILE*) = 0; int value = 741; int power = 7]
+Stack_t "name not stated"[0x7fff20f19280] {
+  ErrorCode = 2 (Failed to determine the error name)
+  size = 0
+  buffer[1] = [0x5618ac92f670]
+  {
+    [1] = 10 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/test.cpp (25) virtual void Run_Stack_t_Test::TestBody()
+Stack_t "stack"[0x7fff20f19280] {
+  ErrorCode = 0 (No error)
+  size = 11
+  buffer[16] = [0x5618ac92ef30]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+   *[7] = -2
+   *[8] = -2
+   *[9] = -2
+   *[10] = -2
+   *[11] = -2
+    [12] = 10 (POISON?)
+    [13] = 10 (POISON?)
+    [14] = 10 (POISON?)
+    [15] = 10 (POISON?)
+    [16] = 10 (POISON?)
+  }
+}
+Verification failed from /home/theneonlightning/3sem/stack/test.cpp (32) virtual void Run_Stack_t_Test::TestBody()
+Stack_t "stack"[0x7fff20f19280] {
+  ErrorCode = 0 (No error)
+  size = 6
+  buffer[16] = [0x5618ac92ef30]
+  {
+   *[1] = -2
+   *[2] = -2
+   *[3] = -2
+   *[4] = -2
+   *[5] = -2
+   *[6] = -2
+    [7] = 10 (POISON?)
+    [8] = 10 (POISON?)
+    [9] = 10 (POISON?)
+    [10] = 10 (POISON?)
+    [11] = 10 (POISON?)
+    [12] = 10 (POISON?)
+    [13] = 10 (POISON?)
+    [14] = 10 (POISON?)
+    [15] = 10 (POISON?)
+    [16] = 10 (POISON?)
   }
 }

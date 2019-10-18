@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/stack.dir/main.cpp.o  -o stack 
+/usr/bin/c++  -g   CMakeFiles/stack.dir/main.cpp.o CMakeFiles/stack.dir/test.cpp.o  -o stack lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a -lpthread 
