@@ -1,0 +1,21 @@
+    in ax 1
+    in bx 1
+    jmp .loop
+
+.loop:
+    push ax
+    push bx
+    mul
+    out
+
+    pop ax
+
+    push bx
+    push 1
+    add
+    pop bx
+    jmp .loop
+
+    end
+
+

@@ -1,0 +1,3 @@
+/home/theneonlightning/3sem/processor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/theneonlightning/3sem/processor/cmake-build-debug/CMakeFiles/processor.dir
+/home/theneonlightning/3sem/processor/cmake-build-debug/CMakeFiles/edit_cache.dir

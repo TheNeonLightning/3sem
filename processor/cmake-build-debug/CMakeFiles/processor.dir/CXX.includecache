@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/theneonlightning/3sem/processor/Stack_t.hpp
+cassert
+-
+cstdio
+-
+cstdlib
+-
+ctime
+-
+string
+-
+
+/home/theneonlightning/3sem/processor/main.cpp
+cstdio
+-
+cstdlib
+-
+cstring
+-
+cmath
+-
+unordered_map
+-
+Stack_t.hpp
+/home/theneonlightning/3sem/processor/Stack_t.hpp
+

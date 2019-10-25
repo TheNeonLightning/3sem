@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/processor.dir/main.cpp.o  -o processor 
