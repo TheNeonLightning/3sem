@@ -38,28 +38,29 @@ public:
 
   Processor(const char* program_file, const char* program_bin_file);
 
+  void Assemble();
+
+  void Run();
+
+  void LabelsProcessing();
+
+  void SaveProgramInBin();
+
+  void GetProgramFromBin();
+
+  ~Processor();
+
+private:
+
   void ChangeProgramSize();
 
   void CheckProgramSize(size_t index);
 
   int GetCmdCode(const char* str);
 
-  void Assemble();
-
-  void SaveProgramInBin();
-
-  void GetProgramFromBin();
-
-
-  void LabelsProcessing();
-
   int GetConstValue(size_t index);
 
   int LabelShift(size_t index);
-
-  void Run();
-
-  ~Processor();
 
 };
 
