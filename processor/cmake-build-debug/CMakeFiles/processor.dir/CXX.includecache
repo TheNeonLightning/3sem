@@ -22,12 +22,6 @@ string
 
 /home/theneonlightning/3sem/processor/const_params.hpp
 
-/home/theneonlightning/3sem/processor/main.cpp
-processor.h
-/home/theneonlightning/3sem/processor/processor.h
-gtest/gtest.h
--
-
 /home/theneonlightning/3sem/processor/processor.h
 cstdio
 -
@@ -45,6 +39,12 @@ cmd_code.hpp
 /home/theneonlightning/3sem/processor/cmd_code.hpp
 const_params.hpp
 /home/theneonlightning/3sem/processor/const_params.hpp
+
+/home/theneonlightning/3sem/processor/test.cpp
+processor.h
+/home/theneonlightning/3sem/processor/processor.h
+gtest/gtest.h
+-
 
 googletest-src/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h

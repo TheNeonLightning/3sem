@@ -6,5 +6,13 @@ TEST(SimpleTasks, Factorial) {
   processor.Assemble();
   processor.LabelsProcessing();
   processor.Run();
+  printf("\n");
+}
 
+TEST(SimpleTasks, QuadraticEquation) {
+  Processor processor("../quadratic_equation.txt", "../quadratic_equation_bin.txt");
+  processor.Assemble();
+  processor.LabelsProcessing();
+  processor.Run();
+  printf("\n");
 }
