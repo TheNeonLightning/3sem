@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/processor.dir/main.cpp.o"
+  "CMakeFiles/processor.dir/processor.cpp.o"
+  "CMakeFiles/processor.dir/test.cpp.o"
   "processor"
   "processor.pdb"
 )

@@ -1,0 +1,96 @@
+    in ax 0
+    in bx -3000
+    in cx 1000
+
+
+    push 1000
+    push 1000
+    push ax
+    push 0
+    je .linear_case
+
+    jmp .quadratic_case
+
+.quadratic_case:
+    push 4
+    push ax
+    mul
+    push cx
+    mul
+
+    push bx
+    push bx
+    mul
+
+    sub
+
+    pop dx
+    push dx
+    push 0
+    jb .no_solution
+
+    push dx
+    out
+
+    sqrt
+
+    out
+
+    pop dx
+
+    push ax
+    push 2
+    mul
+    div
+
+    push dx
+    push bx
+    push -1
+    mul
+
+    add
+
+    div
+
+    out
+
+    pop
+
+    push ax
+    push 2
+    mul
+    div
+
+    push dx
+    push bx
+    push -1
+    mul
+
+    sub
+
+    div
+
+    out
+
+    end
+
+.linear_case:
+    push bx
+    push 0
+    je .no_solution
+
+    push bx
+    div
+
+    push cx
+    push -1
+    mul
+
+    div
+    out
+    end
+
+.no_solution:
+    end
+
+    end

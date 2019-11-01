@@ -1,5 +1,6 @@
     in ax 1
     in bx 1
+    in cx 2000
     jmp .loop
 
 .loop:
@@ -14,7 +15,9 @@
     push 1
     add
     pop bx
-    jmp .loop
+    push ax
+    push cx
+    jbe .loop
 
     end
 

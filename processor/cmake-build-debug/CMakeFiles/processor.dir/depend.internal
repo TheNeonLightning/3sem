@@ -3,4 +3,62 @@
 
 CMakeFiles/processor.dir/main.cpp.o
  /home/theneonlightning/3sem/processor/Stack_t.hpp
+ /home/theneonlightning/3sem/processor/cmd_code.hpp
+ /home/theneonlightning/3sem/processor/const_params.hpp
  /home/theneonlightning/3sem/processor/main.cpp
+ /home/theneonlightning/3sem/processor/processor.h
+ googletest-src/googletest/include/gtest/gtest-death-test.h
+ googletest-src/googletest/include/gtest/gtest-matchers.h
+ googletest-src/googletest/include/gtest/gtest-message.h
+ googletest-src/googletest/include/gtest/gtest-param-test.h
+ googletest-src/googletest/include/gtest/gtest-printers.h
+ googletest-src/googletest/include/gtest/gtest-test-part.h
+ googletest-src/googletest/include/gtest/gtest-typed-test.h
+ googletest-src/googletest/include/gtest/gtest.h
+ googletest-src/googletest/include/gtest/gtest_pred_impl.h
+ googletest-src/googletest/include/gtest/gtest_prod.h
+ googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+ googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+ googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+ googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+ googletest-src/googletest/include/gtest/internal/gtest-internal.h
+ googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+ googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+ googletest-src/googletest/include/gtest/internal/gtest-port.h
+ googletest-src/googletest/include/gtest/internal/gtest-string.h
+ googletest-src/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/processor.dir/processor.cpp.o
+ /home/theneonlightning/3sem/processor/Stack_t.hpp
+ /home/theneonlightning/3sem/processor/cmd_code.hpp
+ /home/theneonlightning/3sem/processor/commands.cpp
+ /home/theneonlightning/3sem/processor/commands_array.hpp
+ /home/theneonlightning/3sem/processor/const_params.hpp
+ /home/theneonlightning/3sem/processor/instructions.cpp
+ /home/theneonlightning/3sem/processor/processor.cpp
+ /home/theneonlightning/3sem/processor/processor.h
+CMakeFiles/processor.dir/test.cpp.o
+ /home/theneonlightning/3sem/processor/Stack_t.hpp
+ /home/theneonlightning/3sem/processor/cmd_code.hpp
+ /home/theneonlightning/3sem/processor/const_params.hpp
+ /home/theneonlightning/3sem/processor/processor.h
+ /home/theneonlightning/3sem/processor/test.cpp
+ googletest-src/googletest/include/gtest/gtest-death-test.h
+ googletest-src/googletest/include/gtest/gtest-matchers.h
+ googletest-src/googletest/include/gtest/gtest-message.h
+ googletest-src/googletest/include/gtest/gtest-param-test.h
+ googletest-src/googletest/include/gtest/gtest-printers.h
+ googletest-src/googletest/include/gtest/gtest-test-part.h
+ googletest-src/googletest/include/gtest/gtest-typed-test.h
+ googletest-src/googletest/include/gtest/gtest.h
+ googletest-src/googletest/include/gtest/gtest_pred_impl.h
+ googletest-src/googletest/include/gtest/gtest_prod.h
+ googletest-src/googletest/include/gtest/internal/custom/gtest-port.h
+ googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h
+ googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h
+ googletest-src/googletest/include/gtest/internal/gtest-filepath.h
+ googletest-src/googletest/include/gtest/internal/gtest-internal.h
+ googletest-src/googletest/include/gtest/internal/gtest-param-util.h
+ googletest-src/googletest/include/gtest/internal/gtest-port-arch.h
+ googletest-src/googletest/include/gtest/internal/gtest-port.h
+ googletest-src/googletest/include/gtest/internal/gtest-string.h
+ googletest-src/googletest/include/gtest/internal/gtest-type-util.h

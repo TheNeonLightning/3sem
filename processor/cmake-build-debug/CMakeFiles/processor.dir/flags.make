@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -isystem /home/theneonlightning/3sem/processor/cmake-build-debug/googletest-src/googletest/include -isystem /home/theneonlightning/3sem/processor/cmake-build-debug/googletest-src/googletest 
 

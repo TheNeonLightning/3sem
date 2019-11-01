@@ -22,7 +22,7 @@
 
 #define FORCE_FAIL(error_code) (Dump(error_code, __FILE__, __LINE__, __PRETTY_FUNCTION__) || (assert(false), false));
 
-FILE* LOG_FILE = nullptr;
+static FILE* LOG_FILE = nullptr;
 
 /**
  * /brief The class Stack_t realization with defensive mechanisms and dumper.
