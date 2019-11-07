@@ -1,0 +1,14 @@
+    push 10
+    push 20
+    jmp .Label
+
+.Label:
+    add
+    end
+
+.WrongLabel:
+    mul
+    in bx 10
+    in cx 20
+    push cx
+    end

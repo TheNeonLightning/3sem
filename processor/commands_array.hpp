@@ -2,6 +2,7 @@
 
 using std::vector;
 
+/// Vector containing all commands in Processor::Cmd struct.
 static vector<Processor::Cmd> commands = vector<Processor::Cmd>{{"push", push}, {"pop", pop},
 {"in", in}, {"out", out}, {"add", add},
 {"sub", sub}, {"mul", mul}, {"div", div_code},
