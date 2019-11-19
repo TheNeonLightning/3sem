@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/desigion_tree.dir/main.cpp.o CMakeFiles/desigion_tree.dir/decision_tree.cpp.o  -o desigion_tree 

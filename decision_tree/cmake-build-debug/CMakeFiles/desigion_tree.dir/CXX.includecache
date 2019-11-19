@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/theneonlightning/3sem/decision_tree/constants.h
+
+/home/theneonlightning/3sem/decision_tree/decision_tree.cpp
+decision_tree.h
+/home/theneonlightning/3sem/decision_tree/decision_tree.h
+constants.h
+/home/theneonlightning/3sem/decision_tree/constants.h
+
+/home/theneonlightning/3sem/decision_tree/decision_tree.h
+cassert
+-
+cstdio
+-
+cstring
+-
+
+/home/theneonlightning/3sem/decision_tree/main.cpp
+cassert
+-
+cstdio
+-
+cstring
+-
+decision_tree.h
+/home/theneonlightning/3sem/decision_tree/decision_tree.h
+
