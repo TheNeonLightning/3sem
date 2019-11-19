@@ -380,3 +380,96 @@ void DecisionTree::Definition() {
   }
   printf(".\n");
 }
+
+////////////////////////////////////////////////////////////////////////////////
+///Difference between object in DecisionTree
+
+void DecisionTree::FeaturesOutput(size_t position, Path* definition) {
+  assert(definition != nullptr);
+  assert(position >= 0);
+  assert(position <= definition->capacity);
+
+  if (definition->path[position]) {
+    printf(" %s", current->text);
+    current = current->left;
+  } else {
+    printf(" не %s", current->text);
+    current = current->right;
+  }
+
+  if (position != definition->capacity - 1) {
+    printf(",");
+  }
+}
+
+
+void DecisionTree::Difference() {
+  assert(root != nullptr);
+
+  Path first_def, second_def;
+  char* first_name = nullptr;
+  char* second_name = nullptr;
+
+  printf("Укажите первый объект.\n");
+  first_name = GetString();
+  assert(first_name != nullptr);
+
+  printf("Теперь второй объект.\n");
+  second_name = GetString();
+  assert(second_name != nullptr);
+
+  printf("Сейчас посмотрим...\n");
+
+  GetPath(root, first_name, &first_def);
+
+  if (!first_def.correct) {
+    printf("К сожалению, я не нашёл первый объект.\n");
+    return;
+  }
+
+  GetPath(root, second_name, &second_def);
+
+  if (!second_def.correct) {
+    printf("К сожалению, я не нашёл второй объект.\n");
+    return;
+  }
+
+  current = root;
+  size_t size = 0, index = 0;
+
+  if (first_def.capacity < second_def.capacity) {
+    size = second_def.capacity;
+  } else {
+    size = first_def.capacity;
+  }
+
+  if (first_def.path[0] == second_def.path[0]) {
+    printf("И для %s, и для %s верно, что объект", first_name,
+           second_name);
+  } else {
+    printf("%s и %s не имеют никаких общих признаков", first_name,
+           second_name);
+  }
+
+  while((index < size) && (first_def.path[index] == second_def.path[index])) {
+    FeaturesOutput(index++, &first_def);
+  }
+
+  printf("\nОднако для %s важно:", first_name);
+  Node* difference_point = current;
+  size_t difference_index = index;
+
+  while (index < first_def.capacity) {
+    FeaturesOutput(index++, &first_def);
+  }
+
+  printf(".\nВ то время как для %s справедливо противоположное", second_name);
+  current = difference_point;
+  index = ++difference_index;
+
+  while (index < second_def.capacity) {
+    FeaturesOutput(index++, &second_def);
+  }
+
+  printf(".\n\n");
+}

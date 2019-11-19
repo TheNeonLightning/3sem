@@ -95,4 +95,10 @@ public:
 
   void Definition();
 
+////////////////////////////////////////////////////////////////////////////////
+
+  void FeaturesOutput(size_t position, Path* definition);
+
+  void Difference();
+
 };
