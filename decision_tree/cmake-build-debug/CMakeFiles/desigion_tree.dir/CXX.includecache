@@ -9,6 +9,10 @@
 /home/theneonlightning/3sem/decision_tree/constants.h
 
 /home/theneonlightning/3sem/decision_tree/decision_tree.cpp
+iostream
+-
+string
+-
 decision_tree.h
 /home/theneonlightning/3sem/decision_tree/decision_tree.h
 constants.h

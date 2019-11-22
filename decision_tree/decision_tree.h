@@ -4,6 +4,13 @@
 #include <cstdio>
 #include <cstring>
 
+/**
+ * \breif Reads the text from stdin up to max size TEXT_SIZE. Returns allocated
+ * buffer.
+ *
+ * Before reading skips all '\n' coming before text.
+ * @return Allocated buffer with text
+ */
 char* GetString();
 
 class DecisionTree {

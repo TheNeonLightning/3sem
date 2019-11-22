@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string>
 #include "decision_tree.h"
 #include "constants.h"
 
@@ -16,6 +18,11 @@ char* GetString() {
     str[position++] = symbol;
     symbol = getc(stdin);
   }
+
+  void* str_reallocated = realloc(str, position);
+  assert(str_reallocated != nullptr);
+
+  str = static_cast<char*>(str_reallocated);
 
   assert(str != nullptr);
   return str;
@@ -109,7 +116,7 @@ void DecisionTree::Descent() {
     printf("%s? [0/1]\n", current->text);
     scanf("%d", &result);
 
-    if (result) {
+    if (result == 1) {
       is_left = true;
       current = current->left;
     } else {
@@ -455,20 +462,26 @@ void DecisionTree::Difference() {
     FeaturesOutput(index++, &first_def);
   }
 
-  printf("\nОднако для %s важно:", first_name);
-  Node* difference_point = current;
+  Node *difference_point = current;
   size_t difference_index = index;
 
-  while (index < first_def.capacity) {
-    FeaturesOutput(index++, &first_def);
+  if (index < first_def.capacity) {
+      printf("\nОднако для %s важно:", first_name);
+
+      while (index < first_def.capacity) {
+          FeaturesOutput(index++, &first_def);
+      }
   }
 
-  printf(".\nВ то время как для %s справедливо противоположное", second_name);
-  current = difference_point;
-  index = ++difference_index;
+  index = difference_index;
 
-  while (index < second_def.capacity) {
-    FeaturesOutput(index++, &second_def);
+  if (index < second_def.capacity) {
+      printf(".\nВ то время как для %s справедливо следующее:", second_name);
+      current = difference_point;
+
+      while (index < second_def.capacity) {
+          FeaturesOutput(index++, &second_def);
+      }
   }
 
   printf(".\n\n");
