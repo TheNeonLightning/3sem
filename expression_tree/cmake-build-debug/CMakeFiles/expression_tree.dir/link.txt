@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/expression_tree.dir/main.cpp.o CMakeFiles/expression_tree.dir/expression_tree.cpp.o  -o expression_tree 

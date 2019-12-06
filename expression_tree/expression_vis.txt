@@ -1,0 +1,136 @@
+digraph DecisionTree {
+node [shape=record]
+Node0 [label="{0x55b91ea57000 | +}"]
+Node1 [label="{0x55b91ea57030 | *}"]
+Node0 -> Node1
+Node2 [label="{0x55b91ea57060 | /}"]
+Node1 -> Node2
+Node3 [label="{0x55b91ea570e0 | -}"]
+Node2 -> Node3
+Node4 [label="{0x55b91ea57110 | *}"]
+Node3 -> Node4
+Node5 [label="{0x55b91ea57140 | *}"]
+Node4 -> Node5
+Node6 [label="{0x55b91ea57170 | exp}"]
+Node5 -> Node6
+Node7 [label="{0x55b91ea571a0 | sin}"]
+Node6 -> Node7
+Node8 [label="{0x55b91ea571d0 | x}"]
+Node7 -> Node8
+Node9 [label="{0x55b91ea57200 | *}"]
+Node5 -> Node9
+Node10 [label="{0x55b91ea57230 | cos}"]
+Node9 -> Node10
+Node11 [label="{0x55b91ea57260 | x}"]
+Node10 -> Node11
+Node12 [label="{0x55b91ea57290 | 1}"]
+Node9 -> Node12
+Node13 [label="{0x55b91ea572c0 | +}"]
+Node4 -> Node13
+Node14 [label="{0x55b91ea572f0 | 1}"]
+Node13 -> Node14
+Node15 [label="{0x55b91ea57320 | ^}"]
+Node13 -> Node15
+Node16 [label="{0x55b91ea57350 | x}"]
+Node15 -> Node16
+Node17 [label="{0x55b91ea57380 | 2}"]
+Node15 -> Node17
+Node18 [label="{0x55b91ea573b0 | *}"]
+Node3 -> Node18
+Node19 [label="{0x55b91ea573e0 | exp}"]
+Node18 -> Node19
+Node20 [label="{0x55b91ea57410 | sin}"]
+Node19 -> Node20
+Node21 [label="{0x55b91ea57440 | x}"]
+Node20 -> Node21
+Node22 [label="{0x55b91ea57470 | +}"]
+Node18 -> Node22
+Node23 [label="{0x55b91ea574a0 | 0}"]
+Node22 -> Node23
+Node24 [label="{0x55b91ea574d0 | *}"]
+Node22 -> Node24
+Node25 [label="{0x55b91ea57500 | exp}"]
+Node24 -> Node25
+Node26 [label="{0x55b91ea57530 | *}"]
+Node25 -> Node26
+Node27 [label="{0x55b91ea57560 | ln}"]
+Node26 -> Node27
+Node28 [label="{0x55b91ea57590 | x}"]
+Node27 -> Node28
+Node29 [label="{0x55b91ea575c0 | 2}"]
+Node26 -> Node29
+Node30 [label="{0x55b91ea575f0 | +}"]
+Node24 -> Node30
+Node31 [label="{0x55b91ea57620 | *}"]
+Node30 -> Node31
+Node32 [label="{0x55b91ea57650 | *}"]
+Node31 -> Node32
+Node33 [label="{0x55b91ea57680 | /}"]
+Node32 -> Node33
+Node34 [label="{0x55b91ea576b0 | 1}"]
+Node33 -> Node34
+Node35 [label="{0x55b91ea576e0 | x}"]
+Node33 -> Node35
+Node36 [label="{0x55b91ea57710 | 1}"]
+Node32 -> Node36
+Node37 [label="{0x55b91ea57740 | 2}"]
+Node31 -> Node37
+Node38 [label="{0x55b91ea57770 | *}"]
+Node30 -> Node38
+Node39 [label="{0x55b91ea577a0 | ln}"]
+Node38 -> Node39
+Node40 [label="{0x55b91ea577d0 | x}"]
+Node39 -> Node40
+Node41 [label="{0x55b91ea57800 | 0}"]
+Node38 -> Node41
+Node42 [label="{0x55b91ea57830 | ^}"]
+Node2 -> Node42
+Node43 [label="{0x55b91ea57860 | +}"]
+Node42 -> Node43
+Node44 [label="{0x55b91ea57890 | 1}"]
+Node43 -> Node44
+Node45 [label="{0x55b91ea578c0 | ^}"]
+Node43 -> Node45
+Node46 [label="{0x55b91ea578f0 | x}"]
+Node45 -> Node46
+Node47 [label="{0x55b91ea57920 | 2}"]
+Node45 -> Node47
+Node48 [label="{0x55b91ea57950 | 2}"]
+Node42 -> Node48
+Node49 [label="{0x55b91ea57980 | cos}"]
+Node1 -> Node49
+Node50 [label="{0x55b91ea579b0 | x}"]
+Node49 -> Node50
+Node51 [label="{0x55b91ea579e0 | *}"]
+Node0 -> Node51
+Node52 [label="{0x55b91ea57a10 | /}"]
+Node51 -> Node52
+Node53 [label="{0x55b91ea57a40 | exp}"]
+Node52 -> Node53
+Node54 [label="{0x55b91ea57a70 | sin}"]
+Node53 -> Node54
+Node55 [label="{0x55b91ea57aa0 | x}"]
+Node54 -> Node55
+Node56 [label="{0x55b91ea57ad0 | +}"]
+Node52 -> Node56
+Node57 [label="{0x55b91ea57b00 | 1}"]
+Node56 -> Node57
+Node58 [label="{0x55b91ea57b30 | ^}"]
+Node56 -> Node58
+Node59 [label="{0x55b91ea57b60 | x}"]
+Node58 -> Node59
+Node60 [label="{0x55b91ea57b90 | 2}"]
+Node58 -> Node60
+Node61 [label="{0x55b91ea57bc0 | *}"]
+Node51 -> Node61
+Node62 [label="{0x55b91ea57bf0 | *}"]
+Node61 -> Node62
+Node63 [label="{0x55b91ea57c20 | sin}"]
+Node62 -> Node63
+Node64 [label="{0x55b91ea57c50 | x}"]
+Node63 -> Node64
+Node65 [label="{0x55b91ea57c80 | -1}"]
+Node62 -> Node65
+Node66 [label="{0x55b91ea57cb0 | 1}"]
+Node61 -> Node66
+}

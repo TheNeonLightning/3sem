@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/theneonlightning/3sem/expression_tree/constants.h
+
+/home/theneonlightning/3sem/expression_tree/expression_tree.cpp
+expression_tree.h
+/home/theneonlightning/3sem/expression_tree/expression_tree.h
+constants.h
+/home/theneonlightning/3sem/expression_tree/constants.h
+
+/home/theneonlightning/3sem/expression_tree/expression_tree.h
+cstdio
+-
+cassert
+-
+cstring
+-
+cstdlib
+-
+
+/home/theneonlightning/3sem/expression_tree/main.cpp
+expression_tree.h
+/home/theneonlightning/3sem/expression_tree/expression_tree.h
+
