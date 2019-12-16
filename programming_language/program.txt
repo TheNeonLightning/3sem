@@ -1,0 +1,16 @@
+battle peak(troop1, troop2) {
+    troop1 -= troop2;
+    troop2 -= troop1;
+}
+
+battlefield mountains() {
+    troop archers = 746;
+    troop cavalry = crusade;
+    cavalry = 100;
+    battle peak(archers, cavalry);
+    course (archers > 0) {
+        winner archers;
+    } otherwise {
+        winner cavalry;
+    }
+}

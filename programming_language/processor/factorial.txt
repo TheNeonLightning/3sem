@@ -1,0 +1,24 @@
+    in ax 1
+    in bx 1
+    in cx 2000
+    jmp .loop
+
+.loop:
+    push ax
+    push bx
+    mul
+    out
+
+    pop ax
+
+    push bx
+    push 1
+    add
+    pop bx
+    push ax
+    push cx
+    jbe .loop
+
+    end
+
+
