@@ -1,5 +1,3 @@
-# 3sem
-
 • Implemented a simple CPU simulator with registers and stack and supporting
 simple assembler operations.
 
