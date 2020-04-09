@@ -5,8 +5,7 @@ simple assembler operations.
 
 • Added labels and different jump commands with or without condition.
 
-• Wrote factorial calculation and quadratic equation solution on the emu-
-lator’s assembler language.
+• Wrote factorial calculation and quadratic equation solution on the emulator’s assembler language.
 
 • Used own stack in the project.
 
