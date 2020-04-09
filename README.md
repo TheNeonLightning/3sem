@@ -1,4 +1,3 @@
-# 3sem
 Stack with protection:
 
 • Used different techniques to prevent stack data from injections.
